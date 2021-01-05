@@ -1,0 +1,12 @@
+get_token:
+# 和业务接口方法名一致，存储request发送需要的字段
+  method: get
+  url: https://${ip}/cgi-bin/gettoken
+  # ${ip}多环境测试时，ip能够随时自动更改
+  params:
+    corpid: ${corpid}
+    corpsecret: ${corpsecret}
+    # 用变量定义corpid，corpsecret，以获取不同模块的token
+  headers:
+    Host: qyapi.weixin.qq.com
+    # 多环境切换时header中域名必须保持不变

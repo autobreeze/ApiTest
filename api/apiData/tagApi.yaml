@@ -1,0 +1,56 @@
+corpid: wwd0922f69a22e9f7a
+corpsecret: gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc
+
+create_tag:
+# 创建标签
+  method: post
+  url: https://${ip}/cgi-bin/tag/create
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+update_tag:
+# 更新标签名称
+  method: post
+  url: https://${ip}/cgi-bin/tag/update
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+delete_tag:
+# 删除标签
+  method: get
+  url: https://${ip}/cgi-bin/tag/delete
+  params:
+    access_token: ${access_token}
+    tagid: ${tagid}
+
+get_tag_member:
+# 获取标签成员
+  method: get
+  url: https://${ip}/cgi-bin/tag/get
+  params:
+    access_token: ${access_token}
+    tagid: ${tagid}
+
+add_tag_member:
+# 添加标签成员
+  method: post
+  url: https://${ip}/cgi-bin/tag/addtagusers
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+delete_tag_member:
+# 删除标签成员
+  method: post
+  url: https://${ip}/cgi-bin/tag/deltagusers
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+get_tag_member_list:
+  method: get
+  url: https://${ip}/cgi-bin/tag/list
+  params:
+    access_token: ${access_token}

@@ -1,0 +1,6 @@
+21-01-06 00:54:33 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:54:33 - INFO-test_get_tag_member_list: ******** test_get_tag_member_list begin ********
+21-01-06 00:54:33 - INFO-get_tag_member_list: not need params
+21-01-06 00:54:33 - INFO-send_api: be sending apidata is {'method': 'get', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/list'}
+21-01-06 00:54:33 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'taglist': [{'tagid': 27, 'tagname': '1423#½Ó¿Úer'}]}
+21-01-06 00:54:33 - INFO-pytest_runtest_makereport: ******** passed ********

@@ -1,0 +1,69 @@
+test_create_member:
+# 用例数据，key使用用例函数名
+  -
+   userid: "liumo"
+   name: "jis"
+   department: 1
+   mobile: 18716038523
+  -
+   userid: "lium4o"
+   name: "ji4s"
+   department: 1
+   mobile: 18716038521
+   #用例的两组数据，每组数据可以发送不同字段及其值，达到动态增减发送字段，而不用修改接口函数的目的
+
+test_get_member:
+  -
+    -
+      userid: "iop"
+      name: "iop"
+      department: 1
+      mobile: 18716038021
+    -
+      userid: "iop"
+
+test_update_member:
+  -
+     -
+       userid: "i5eop"
+       name: "i5eop"
+       department: 1
+       mobile: 18716048621
+     -
+       userid: "i5eop"
+       name: "123"
+
+test_delete_member:
+  -
+    -
+      userid: "ie3op"
+      name: "ie3op"
+      department: 1
+      mobile: 18716099621
+    -
+      userid: "ie3op"
+
+test_batch_delete_member:
+  -
+    -
+      userid: "liusan"
+      name: "六三"
+      department: 1
+      mobile: 18716049681
+    -
+      useridlist:
+        - "liusan"
+
+test_get_dep_member:
+  -
+    department_id: 1
+
+test_get_dep_member_detail:
+  -
+    department_id: 1
+    fetch_child: 1
+
+
+
+
+

@@ -1,0 +1,176 @@
+21-01-05 22:57:41 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 22:57:41 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 22:57:41 - INFO-test_create_department: ******** test_create_department begin ********
+21-01-05 22:57:41 - INFO-create_department: casetada is {'name': '子部门1', 'parentid': 1, 'id': 3}
+21-01-05 22:57:41 - ERROR-pytest_runtest_makereport: ******** failed ********
+21-01-05 22:57:41 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 22:57:41 - INFO-test_create_department: ******** test_create_department begin ********
+21-01-05 22:57:41 - INFO-create_department: casetada is {'name': '子子部门1', 'parentid': 3}
+21-01-05 22:57:41 - ERROR-pytest_runtest_makereport: ******** failed ********
+21-01-05 22:59:22 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 22:59:22 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-05 22:59:23 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 's7KpGRrg9qerF4mEALDTd6IneH6X9wDLOSUiWngeT50jHo6-szZzeO18_7i2ASq4lyK2y6WjsNQ6UD5nth6afnDrCY751Zi8C4vTyCYKj6G9MqxJp8sskInHkHwCQ9V_wXhW2N04_K25bEY8dWimVEv7xtvRci75rdGOIkuNjfo9mbG7aOVEfPRkGS2JQZAta9X55u7cls1gl6iPa149jQ', 'expires_in': 7200}
+21-01-05 22:59:23 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 22:59:23 - INFO-test_create_department: ******** test_create_department begin ********
+21-01-05 22:59:23 - INFO-create_department: casetada is {'name': '子部门1', 'parentid': 1, 'id': 3}
+21-01-05 22:59:23 - INFO-send_api: be sending apidata is {'json': {'name': '子部门1', 'parentid': 1, 'id': 3}, 'method': 'post', 'params': {'access_token': 's7KpGRrg9qerF4mEALDTd6IneH6X9wDLOSUiWngeT50jHo6-szZzeO18_7i2ASq4lyK2y6WjsNQ6UD5nth6afnDrCY751Zi8C4vTyCYKj6G9MqxJp8sskInHkHwCQ9V_wXhW2N04_K25bEY8dWimVEv7xtvRci75rdGOIkuNjfo9mbG7aOVEfPRkGS2JQZAta9X55u7cls1gl6iPa149jQ'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/create'}
+21-01-05 22:59:23 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'id': 3}
+21-01-05 22:59:23 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 22:59:23 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 22:59:23 - INFO-test_create_department: ******** test_create_department begin ********
+21-01-05 22:59:23 - INFO-create_department: casetada is {'name': '子子部门1', 'parentid': 3}
+21-01-05 22:59:23 - INFO-send_api: be sending apidata is {'json': {'name': '子子部门1', 'parentid': 3}, 'method': 'post', 'params': {'access_token': 's7KpGRrg9qerF4mEALDTd6IneH6X9wDLOSUiWngeT50jHo6-szZzeO18_7i2ASq4lyK2y6WjsNQ6UD5nth6afnDrCY751Zi8C4vTyCYKj6G9MqxJp8sskInHkHwCQ9V_wXhW2N04_K25bEY8dWimVEv7xtvRci75rdGOIkuNjfo9mbG7aOVEfPRkGS2JQZAta9X55u7cls1gl6iPa149jQ'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/create'}
+21-01-05 22:59:23 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'id': 4}
+21-01-05 22:59:23 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:08:19 - ERROR-load_yaml: while parsing a block collection
+  in "F:\学习资料\pythoncode\Wework\testcase/caseData/test_department.yaml", line 12, column 5
+expected <block end>, but found '<block mapping start>'
+  in "F:\学习资料\pythoncode\Wework\testcase/caseData/test_department.yaml", line 16, column 6
+21-01-05 23:09:23 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 23:09:23 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-05 23:09:24 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-05 23:09:24 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:09:24 - INFO-test_update_department: ******** test_update_department begin ********
+21-01-05 23:09:24 - INFO-create_department: casetada is {'name': '子部门1', 'parentid': 1, 'id': 3}
+21-01-05 23:09:24 - INFO-send_api: be sending apidata is {'json': {'name': '子部门1', 'parentid': 1, 'id': 3}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/create'}
+21-01-05 23:09:24 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'id': 3}
+21-01-05 23:09:24 - INFO-update_department: casetada is {'id': 3, 'name': '更新子部门1'}
+21-01-05 23:09:24 - INFO-send_api: be sending apidata is {'json': {'id': 3, 'name': '更新子部门1'}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/update'}
+21-01-05 23:09:24 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'updated'}
+21-01-05 23:09:24 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:18:22 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 23:18:22 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-05 23:18:22 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-05 23:18:22 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:18:23 - INFO-test_delete_department: ******** test_delete_department begin ********
+21-01-05 23:18:23 - INFO-create_department: casetada is {'name': '子部门2', 'parentid': 1, 'id': 4}
+21-01-05 23:18:23 - INFO-send_api: be sending apidata is {'json': {'name': '子部门2', 'parentid': 1, 'id': 4}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/create'}
+21-01-05 23:18:23 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'id': 4}
+21-01-05 23:18:23 - INFO-delete_department: casetada is {'id': 4}
+21-01-05 23:18:23 - INFO-send_api: be sending apidata is {'method': 'get', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'id': 4}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/delete'}
+21-01-05 23:18:23 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'deleted'}
+21-01-05 23:18:23 - ERROR-pytest_runtest_makereport: ******** failed ********
+21-01-05 23:19:02 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 23:19:02 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-05 23:19:03 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-05 23:19:03 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:19:03 - INFO-test_delete_department: ******** test_delete_department begin ********
+21-01-05 23:19:03 - INFO-create_department: casetada is {'name': '子部门2', 'parentid': 1, 'id': 4}
+21-01-05 23:19:03 - INFO-send_api: be sending apidata is {'json': {'name': '子部门2', 'parentid': 1, 'id': 4}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/create'}
+21-01-05 23:19:03 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'id': 4}
+21-01-05 23:19:03 - INFO-delete_department: casetada is {'id': 4}
+21-01-05 23:19:03 - INFO-send_api: be sending apidata is {'method': 'get', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'id': 4}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/delete'}
+21-01-05 23:19:03 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'deleted'}
+21-01-05 23:19:03 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:24:33 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 23:24:34 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-05 23:24:34 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-05 23:24:34 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:24:34 - INFO-test_get_department_list: ******** test_get_department_list begin ********
+21-01-05 23:24:34 - ERROR-pytest_runtest_makereport: ******** failed ********
+21-01-05 23:25:51 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 23:25:51 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-05 23:25:52 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-05 23:25:52 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:25:52 - INFO-test_get_department_list: ******** test_get_department_list begin ********
+21-01-05 23:25:52 - INFO-get_department_list: casetada is None
+21-01-05 23:25:52 - INFO-send_api: be sending apidata is {'method': 'get', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/department/list'}
+21-01-05 23:25:52 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'department': [{'id': 1, 'name': '测开专业', 'parentid': 0, 'order': 100000000}]}
+21-01-05 23:25:52 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:56:18 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 23:56:18 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-05 23:56:19 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-05 23:56:19 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:56:19 - INFO-test_update_tag: ******** test_update_tag begin ********
+21-01-05 23:56:19 - ERROR-pytest_runtest_makereport: ******** failed ********
+21-01-05 23:58:07 - INFO-setup_class: ******** setup_class begin ********
+21-01-05 23:58:07 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-05 23:58:07 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-05 23:58:07 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-05 23:58:07 - INFO-test_update_tag: ******** test_update_tag begin ********
+21-01-05 23:58:07 - INFO-create_tag: casetada is {'tagname': '23#接口er', 'tagid': 13}
+21-01-05 23:58:07 - INFO-send_api: be sending apidata is {'json': {'tagname': '23#接口er', 'tagid': 13}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/create'}
+21-01-05 23:58:07 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'tagid': 13}
+21-01-05 23:58:07 - INFO-update_tag: casetada is {'tagid': 13, 'tagname': 'updatetag name'}
+21-01-05 23:58:07 - INFO-send_api: be sending apidata is {'json': {'tagid': 13, 'tagname': 'updatetag name'}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/update'}
+21-01-05 23:58:08 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'updated'}
+21-01-05 23:58:08 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:05:26 - INFO-setup_class: ******** setup_class begin ********
+21-01-06 00:05:26 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-06 00:05:27 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-06 00:05:27 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:05:27 - INFO-test_delete_tag: ******** test_delete_tag begin ********
+21-01-06 00:05:27 - INFO-create_tag: casetada is {'tagname': 'ewoj234()', 'tagid': 14}
+21-01-06 00:05:27 - INFO-send_api: be sending apidata is {'json': {'tagname': 'ewoj234()', 'tagid': 14}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/create'}
+21-01-06 00:05:27 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'tagid': 14}
+21-01-06 00:05:27 - INFO-delete_tag: casetada is {'tagid': 14}
+21-01-06 00:05:27 - INFO-send_api: be sending apidata is {'method': 'get', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'tagid': 14}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/delete'}
+21-01-06 00:05:27 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'deleted'}
+21-01-06 00:05:27 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:10:37 - INFO-setup_class: ******** setup_class begin ********
+21-01-06 00:10:37 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-06 00:10:38 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-06 00:10:38 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:10:38 - INFO-test_get_tag_member: ******** test_get_tag_member begin ********
+21-01-06 00:10:38 - INFO-create_tag: casetada is {'tagname': '+_kogk麦科勒姆', 'tagid': 16}
+21-01-06 00:10:38 - INFO-send_api: be sending apidata is {'json': {'tagname': '+_kogk麦科勒姆', 'tagid': 16}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/create'}
+21-01-06 00:10:38 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'tagid': 16}
+21-01-06 00:10:38 - INFO-get_tag_member: casetada is {'tagid': 16}
+21-01-06 00:10:38 - INFO-send_api: be sending apidata is {'method': 'get', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'tagid': 16}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/get'}
+21-01-06 00:10:38 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'userlist': [], 'partylist': [], 'tagname': '+_kogk麦科勒姆'}
+21-01-06 00:10:38 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:39:56 - INFO-setup_class: ******** setup_class begin ********
+21-01-06 00:39:56 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-06 00:39:56 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-06 00:39:56 - ERROR-pytest_runtest_makereport: ******** failed ********
+21-01-06 00:40:30 - INFO-setup_class: ******** setup_class begin ********
+21-01-06 00:40:30 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-06 00:40:31 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-06 00:40:31 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:40:31 - INFO-test_add_tag_member: ******** test_add_tag_member begin ********
+21-01-06 00:40:31 - INFO-create_member: casedata is {'userid': 'ie3op', 'name': 'ie3op', 'department': 1, 'mobile': 18716099621}
+21-01-06 00:40:31 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'json': {'userid': 'ie3op', 'name': 'ie3op', 'department': 1, 'mobile': 18716099621}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create'}
+21-01-06 00:40:31 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created. Warning: wrong json format. '}
+21-01-06 00:40:31 - INFO-create_tag: casetada is {'tagname': '123#接口er', 'tagid': 26}
+21-01-06 00:40:31 - INFO-send_api: be sending apidata is {'json': {'tagname': '123#接口er', 'tagid': 26}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/create'}
+21-01-06 00:40:31 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'tagid': 26}
+21-01-06 00:40:31 - INFO-add_tag_member: casetada is {'tagid': 26, 'userlist': ['ie3op']}
+21-01-06 00:40:31 - INFO-send_api: be sending apidata is {'json': {'tagid': 26, 'userlist': ['ie3op']}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/addtagusers'}
+21-01-06 00:40:32 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'invalidparty': []}
+21-01-06 00:40:32 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:47:47 - INFO-setup_class: ******** setup_class begin ********
+21-01-06 00:47:47 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-06 00:47:48 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-06 00:47:48 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:47:48 - INFO-test_delete_tag_member: ******** test_delete_tag_member begin ********
+21-01-06 00:47:48 - INFO-create_member: casedata is {'userid': 'ie63op', 'name': 'ie63op', 'department': 1, 'mobile': 18716099621}
+21-01-06 00:47:48 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'json': {'userid': 'ie63op', 'name': 'ie63op', 'department': 1, 'mobile': 18716099621}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create'}
+21-01-06 00:47:48 - INFO-send_api: origin response is {'errcode': 60104, 'errmsg': 'Warning: wrong json format. mobile existed:ie3op'}
+21-01-06 00:47:48 - ERROR-pytest_runtest_makereport: ******** failed ********
+21-01-06 00:48:34 - INFO-setup_class: ******** setup_class begin ********
+21-01-06 00:48:34 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-06 00:48:34 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-06 00:48:34 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:48:34 - INFO-test_delete_tag_member: ******** test_delete_tag_member begin ********
+21-01-06 00:48:34 - INFO-create_member: casedata is {'userid': 'ie63op', 'name': 'ie63op', 'department': 1, 'mobile': 18716098621}
+21-01-06 00:48:34 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'json': {'userid': 'ie63op', 'name': 'ie63op', 'department': 1, 'mobile': 18716098621}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/user/create'}
+21-01-06 00:48:35 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created. Warning: wrong json format. '}
+21-01-06 00:48:35 - INFO-create_tag: casetada is {'tagname': '1423#接口er', 'tagid': 27}
+21-01-06 00:48:35 - INFO-send_api: be sending apidata is {'json': {'tagname': '1423#接口er', 'tagid': 27}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/create'}
+21-01-06 00:48:35 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'created', 'tagid': 27}
+21-01-06 00:48:35 - INFO-add_tag_member: casetada is {'tagid': 27, 'userlist': ['ie3op']}
+21-01-06 00:48:35 - INFO-send_api: be sending apidata is {'json': {'tagid': 27, 'userlist': ['ie3op']}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/addtagusers'}
+21-01-06 00:48:35 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'invalidparty': []}
+21-01-06 00:48:35 - INFO-delete_tag_member: casetada is {'tagid': 27, 'userlist': ['ie3op']}
+21-01-06 00:48:35 - INFO-send_api: be sending apidata is {'json': {'tagid': 27, 'userlist': ['ie3op']}, 'method': 'post', 'params': {'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/tag/deltagusers'}
+21-01-06 00:48:36 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'deleted', 'invalidparty': []}
+21-01-06 00:48:36 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:53:29 - INFO-setup_class: ******** setup_class begin ********
+21-01-06 00:53:29 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-06 00:53:29 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}
+21-01-06 00:53:29 - INFO-pytest_runtest_makereport: ******** passed ********
+21-01-06 00:53:29 - INFO-test_get_tag_member_list: ******** test_get_tag_member_list begin ********
+21-01-06 00:53:29 - ERROR-pytest_runtest_makereport: ******** failed ********
+21-01-06 00:54:32 - INFO-setup_class: ******** setup_class begin ********
+21-01-06 00:54:32 - INFO-send_api: be sending apidata is {'headers': {'Host': 'qyapi.weixin.qq.com'}, 'method': 'get', 'params': {'corpid': 'wwd0922f69a22e9f7a', 'corpsecret': 'gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc'}, 'url': 'https://qyapi.weixin.qq.com/cgi-bin/gettoken'}
+21-01-06 00:54:33 - INFO-send_api: origin response is {'errcode': 0, 'errmsg': 'ok', 'access_token': 't2F3Oyc_CFJbH-s-yoOV6dwfvb-kujl2fUXq-GT3sd2hCIsEOtjNNOeVmUORaTe432M6EHyzYs-d42dk0nWoHND0m8W6trwQAyVG0S_ivm1owtfPKo5SuybLnkpRa5YJrw4bSw4QLrbX-U_X4NIaHliE4zGDYrO3_-eC6kVak_WY9saHp_sN96Nr8GNXCSLgHpRfeva6W9D3AwCJvbEE3w', 'expires_in': 7200}

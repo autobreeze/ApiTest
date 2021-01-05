@@ -1,0 +1,48 @@
+test_create_tag:
+  - tagname: "23#接口er"
+  - tagname: "#$12#接口er"
+
+test_update_tag:
+  -
+    - tagname: "23#接口er"
+      tagid: 13
+    - tagid: 13
+      tagname: "updatetag name"
+
+test_delete_tag:
+   -
+    - tagname: "ewoj234()"
+      tagid: 14
+    - tagid: 13
+
+test_get_tag_member:
+   -
+    - tagname: "+_kogk麦科勒姆"
+      tagid: 16
+    - tagid: 16
+
+test_add_tag_member:
+  -
+    - userid: "ie3op"
+      name: "ie3op"
+      department: 1
+      mobile: 18716099621
+    - tagname: "123#接口er"
+      tagid: 26
+    - tagid: 26
+      userlist:
+        - "ie3op"
+
+test_delete_tag_member:
+  - - userid: "ie63op"
+      name: "ie63op"
+      department: 1
+      mobile: 18716098621
+    - tagname: "1423#接口er"
+      tagid: 27
+    - tagid: 27
+      userlist:
+        - "ie3op"
+    - tagid: 27
+      userlist:
+        - "ie3op"

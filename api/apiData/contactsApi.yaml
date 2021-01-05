@@ -1,0 +1,105 @@
+corpid: wwd0922f69a22e9f7a
+corpsecret: gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc
+# 放置模块请求token需要的corpid，corpsecret
+
+create_member:
+# 通讯录模块，创建成员所需的request参数
+  method: post
+  url: https://${ip}/cgi-bin/user/create
+  params:
+    access_token: ${access_token}
+    #请求时需要的params表单，由get_token接口函数返回
+  json: ${testdata}
+  # 发送的接口字段使用变量代替，已实现发送字段通过测试用例传输
+  headers:
+    Host: qyapi.weixin.qq.com
+
+get_member_info:
+# 获取成员
+  method: get
+  url: https://${ip}/cgi-bin/user/get
+  params:
+    access_token: ${access_token}
+    userid: ${userid}
+
+update_member:
+# 更新成员
+  method: post
+  url: https://${ip}/cgi-bin/user/update
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+delete_member:
+#删除成员
+  method: get
+  url: https://${ip}/cgi-bin/user/delete
+  params:
+    access_token: ${access_token}
+    userid: ${userid}
+
+batch_delete_member:
+# 批量删除成员
+  method: post
+  url: https://${ip}/cgi-bin/user/batchdelete
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+get_dep_member:
+# 获取部门成员
+  method: get
+  url: https://${ip}/cgi-bin/user/simplelist
+  params:
+    access_token: ${access_token}
+    department_id: ${department_id}
+
+get_dep_member_detail:
+# 获取部门成员详细信息
+  method: get
+  url: https://${ip}/cgi-bin/user/list
+  params:
+    access_token: ${access_token}
+    department_id: ${department_id}
+    fetch_child: ${fetch_child}
+
+exchange_userid:
+# userid和openid互换
+  method: post
+  url: https://${ip}/cgi-bin/user/convert_to_openid
+  params:
+    access_token: ${access_token}
+    userid: ${userid}
+
+second_verify:
+# 二次验证
+  method: get
+  url: https://${ip}/cgi-bin/user/authsucc
+  params:
+    access_token: ${access_token}
+    userid: ${userid}
+
+invite_member:
+# 邀请成员
+  method: post
+  url: https://${ip}/cgi-bin/batch/invite
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+get_join_qrcode:
+# 获取企业二维码
+  method: get
+  url: https://${ip}/cgi-bin/corp/get_join_qrcode
+  params:
+    access_token: ${access_token}
+    size_type: ${size_type}
+
+get_active_stat:
+# 获取活跃成员数
+  method: post
+  url: https://${ip}/cgi-bin/user/get_active_stat
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+

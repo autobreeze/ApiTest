@@ -1,0 +1,23 @@
+test_create_department:
+  -
+    name: "子部门1"
+    parentid: 1
+    id: 3
+  -
+    name: "子子部门1"
+    parentid: 3
+
+test_update_department:
+  -
+    - name: "子部门1"
+      parentid: 1
+      id: 3
+    - id: 3
+      name: "更新子部门1"
+
+test_delete_department:
+  -
+    - name: "子部门2"
+      parentid: 1
+      id: 4
+    - id: 4

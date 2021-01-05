@@ -1,0 +1,35 @@
+corpid: wwd0922f69a22e9f7a
+corpsecret: gdN7CwQLftiLrHWlg7gsFyW39GmfidPHALpwKKaIvYc
+
+create_department:
+# 创建部门
+  method: post
+  url: https://${ip}/cgi-bin/department/create
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+update_department:
+# 更新部门
+  method: post
+  url: https://${ip}/cgi-bin/department/update
+  params:
+    access_token: ${access_token}
+  json: ${testdata}
+
+delete_department:
+# 删除部门
+  method: get
+  url: https://${ip}/cgi-bin/department/delete
+  params:
+    access_token: ${access_token}
+    id: ${id}
+
+get_department_list:
+# 获取部门列表
+  method: get
+  url: https://${ip}/cgi-bin/department/list
+  params:
+    access_token: ${access_token}
+    #id: ${id}
+
