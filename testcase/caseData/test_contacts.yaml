@@ -12,6 +12,19 @@ test_create_member:
    mobile: 18716038521
    #用例的两组数据，每组数据可以发送不同字段及其值，达到动态增减发送字段，而不用修改接口函数的目的
 
+test_create_member_failed:
+# 用例数据，key使用用例函数名
+  -
+   #userid: "liumo"
+   name: "jis"
+   department: 1
+   mobile: 18716038523
+  -
+   #userid: "lium4o"
+   name: "ji4s"
+   department: 1
+   mobile: 18716038521
+
 test_get_member:
   -
     -

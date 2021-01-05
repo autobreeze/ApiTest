@@ -14,12 +14,21 @@ class TestContacts:
         LogRecorder.logger.info(f'******** setup_class begin ********')
         cls.contacts = ContactsApi()
 
+    @pytest.mark.run(order=3)
     @pytest.mark.parametrize("testdata", casedata["test_create_member"])
     def test_create_member(self, testdata: dict):
         LogRecorder.logger.info(f"******** {sys._getframe().f_code.co_name} begin ********")
         response = self.contacts.create_member(testdata)
         assert response["errcode"] == 0
 
+    @pytest.mark.xfail(reason="lack of userid")
+    @pytest.mark.parametrize("testdata", casedata["test_create_member_failed"])
+    def test_create_member_failed(self, testdata: dict):
+        LogRecorder.logger.info(f"******** {sys._getframe().f_code.co_name} begin ********")
+        response = self.contacts.create_member(testdata)
+        assert response["errcode"] == 0
+
+    @pytest.mark.run(order=2)
     @pytest.mark.parametrize("createdata, getdata", casedata["test_get_member"])
     def test_get_member(self, createdata: dict, getdata: dict):
         LogRecorder.logger.info(f"******** {sys._getframe().f_code.co_name} begin ********")
@@ -28,6 +37,7 @@ class TestContacts:
         response2 = self.contacts.get_member(getdata)
         assert response2["userid"] == ((self.casedata["test_get_member"][0])[0])["userid"]
 
+    @pytest.mark.run(order=1)
     @pytest.mark.parametrize("createdata, updatedata", casedata["test_update_member"])
     def test_update_member(self, createdata: dict, updatedata: dict):
         LogRecorder.logger.info(f"******** {sys._getframe().f_code.co_name} begin ********")
@@ -36,6 +46,7 @@ class TestContacts:
         response2 = self.contacts.update_member(updatedata)
         assert response2["errcode"] == 0
 
+    @pytest.mark.repeat(2)
     @pytest.mark.parametrize("createdata, deletedata", casedata["test_delete_member"])
     def test_delete_member(self, createdata, deletedata):
         LogRecorder.logger.info(f"******** {sys._getframe().f_code.co_name} begin ********")
