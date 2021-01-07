@@ -21,7 +21,10 @@ python依赖库：
     allure-pytest==2.8.16
     allure-python-commons==2.8.16
     PyYAML==5.3.1
-    安装方式; 使用cmd或者shell，使用pip install -r requirements.txt
+    pytest-xdist==2.1.0
+    pytest-ordering==0.6
+    pytest-repeat==0.9.1
+    安装方式：运行install.sh脚本
 
 框架构成：
 -api
@@ -82,6 +85,7 @@ python依赖库：
     2.初始化：FatherApi.get_token（加载api.yaml，变量替换值写入_params）->BaseApi.send_api（替换变量）->requests.request（发送获取token请求）->返回token
     3.用例执行：使用@pytest.mark.parametrize(data)传入数据->test_contacts.TestContacts.test_creat_member->ContactsApi.create_member->
                 BaseApi.send_api（替换变量->requests.request（发送获取token请求）->assert 断言
+    4.pytest -n auto 多cpu并行执行用例
 
     报告：
     1.使用pytest 用例文件名 --alluredir=存储路径
@@ -135,7 +139,6 @@ python依赖库：
 待完成项：
     1.api接口完善......
     2.测试用例完善，正向，反向......
-    3.xml解析
-    4.pytest的其他测试装置应用到用例，比如预期失败，标签等等
+    3.pytest的其他测试装置应用到用例，confest.py
 
-重要：不管是数据驱动，还是装饰器，或者其他功能函数，封装的基本思路都是不变的写成模板函数，变的写成
+重要：不管是数据驱动，还是装饰器，或者其他功能函数，封装的基本思路都是不变的写成模板函数，变的使用数据驱动进行维护
