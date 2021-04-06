@@ -89,7 +89,7 @@ python依赖库：
 
     报告：
     1.使用pytest 用例文件名 --alluredir=存储路径
-    2.生成html使用 pytest generate 存储路径 -o html报告路径 --clean（清除路径中已经有的报告）
+    2.生成html使用 allure generate 存储路径 -o html报告路径 --clean（清除路径中已经有的报告）
     3.使用allure open -h 127.0.0.1 -p 8883 html报告路径  查看报告
 
 
